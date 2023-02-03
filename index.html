@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator walut</title>
     <link rel="icon" href="images/just-geff67b77e_1280.png">
+    <meta property="og:image" content="images/euro-g2cfdf1aa6_1920.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,46 +23,46 @@
 </head>
 
 <body class="body">
-    <header class="header">
-        <h1 class="header__header">Przelicz waluty</h1>
-    </header>
-
-    <section class="section">
-        <form class="section__form jsForm" method="get">
-            <fieldset class="section__fieldset">
-                <legend class="section__legend">Dane</legend>
-                <p>
-                    <label class="section__label">
-                        Żądana waluta:
-                        <select name="currency" class="section__select jsCurrency">
-                            <option value="USD">Dolar amerykański (USD)</option>
-                            <option value="CHF">Frank szwajcarski (CHF)</option>
-                            <option value="GBP">Funt szterling (GBP)</option>
-                            <option value="MXN">Peso meksykańskie (MXN)</option>
-                        </select>
-                    </label>
-                </p>
-                <p class="section__paragraph">
-                    <label class="section__label">
-                        Ilość w PLN: <input class="section__input jsAmount" name="PlnAmount" required type="number" min="1" placeholder="Podaj ilość">
-                    </label>
-                </p>
-            </fieldset>
-            <fieldset class="section__fieldset">
-                <legend class="section__legend">Kalkulacja</legend>
-                <p class="section__paragraph">
-                    <button class="section__button jsButton">Przelicz</button>
-                </p>
-                <p class="section__paragraph--result">
-                    Ilość w żądanej walucie:<strong class="jsResult"></strong>
-                </p>
-            </fieldset>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <p class="footer__paragraph">Napisał: Adam Wieczorek</p>
-    </footer>
+        <header class="header">
+            <h1 class="header__header">Przelicz waluty</h1>
+        </header>
+    
+        <section class="section">
+            <form class="section__form jsForm" method="get">
+                <fieldset class="section__fieldset">
+                    <legend class="section__legend">Dane</legend>
+                    <p>
+                        <label class="section__label">
+                            Żądana waluta:
+                            <select name="currency" class="section__select jsCurrency">
+                                <option value="USD">Dolar amerykański (USD)</option>
+                                <option value="CHF">Frank szwajcarski (CHF)</option>
+                                <option value="GBP">Funt szterling (GBP)</option>
+                                <option value="MXN">Peso meksykańskie (MXN)</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p class="section__paragraph">
+                        <label class="section__label">
+                            Ilość w PLN: <input class="section__input jsAmount" name="PlnAmount" required type="number" min="1" placeholder="Podaj ilość">
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset class="section__fieldset">
+                    <legend class="section__legend">Kalkulacja</legend>
+                    <p class="section__paragraph">
+                        <button class="section__button jsButton">Przelicz</button>
+                    </p>
+                    <p class="section__paragraph--result">
+                        Ilość w żądanej walucie:<strong class="jsResult"></strong>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    
+        <footer class="footer">
+            <p class="footer__paragraph">Napisał: Adam Wieczorek</p>
+        </footer>
 </body>
 
 </html>
