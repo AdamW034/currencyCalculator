@@ -10,4 +10,13 @@ html {
     max-width: 1000px;
     margin:auto;
     font-family: 'Oswald', sans-serif;
+    background-image: url("../images/euro-g2cfdf1aa6_1920.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pageContent {
+    max-width: 1000px;
+    background-color: brown;
 }
