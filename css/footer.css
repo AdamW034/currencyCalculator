@@ -1,0 +1,11 @@
+.footer {
+    margin: 20px auto;
+    background-color: aquamarine;
+    border-radius: 20px;
+    border: solid black 1px;
+}
+
+.footer__paragraph {
+    text-align: center;
+    padding: 10px;
+}
