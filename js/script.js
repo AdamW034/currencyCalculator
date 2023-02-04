@@ -1,35 +1,40 @@
-let currencyElement = document.querySelector(".jsCurrency");
-let amountElement = document.querySelector(".jsAmount");
-let button = document.querySelector(".jsButton");
-let resultElement = document.querySelector(".jsResult");
-let formElement = document.querySelector(".jsForm");
 
-let currencyUSD = 4.3252;
-let currencyCHF = 4.6981;
-let currencyGBP = 5.3505;
-let currencyMXN = 0.2304;
 
-formElement.addEventListener("input", () => {
+{
+    const calculateResult = () => {
+        const currencyElement = document.querySelector(".jsCurrency");
+        const amountElement = document.querySelector(".jsAmount");
+        const resultElement = document.querySelector(".jsResult");
+        const formElement = document.querySelector(".jsForm");
 
-    let amount = amountElement.value;
-    let currency = currencyElement.value;
-    let result = resultElement.value;
+        formElement.addEventListener("input", () => {
 
-    switch (currency) {
-        case "USD":
-            result = amount / currencyUSD;
-            break;
-        case "CHF":
-            result = amount / currencyCHF;
-            break;
-        case "GBP":
-            result = amount / currencyCHF;
-            break;
-        case  "MXN":
-            result = amount / currencyMXN;
-            break;
-    }
+            const currencyUSD = 4.3252;
+            const currencyCHF = 4.6981;
+            const currencyGBP = 5.3505;
+            const currencyMXN = 0.2304;
+            const amount = amountElement.value;
+            const currency = currencyElement.value;
+            const result = resultElement.value;
+        
+            switch (currency) {
+                case "USD":
+                   return result = amount / currencyUSD;
 
-    resultElement.innerText = result.toFixed(2);
+                case "CHF":
+                   return result = amount / currencyCHF;
 
-});
+                case "GBP":
+                   return result = amount / currencyGBP;
+                    
+                case "MXN":
+                   return result = amount / currencyMXN;
+            };
+        
+            resultElement.innerText = result.toFixed(2);
+        
+        });
+    };
+
+    calculateResult();
+}
