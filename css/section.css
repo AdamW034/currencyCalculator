@@ -13,9 +13,11 @@
 }
 
 .section__fieldset {
+    max-width: 75%;
     border-radius: 20px;
     margin: 20px auto;
     box-shadow: 20px 13px 22px -10px aquamarine;
+    text-align: center;
 }
 
 .section__legend {
@@ -36,6 +38,7 @@
     background-color: rgb(192, 190, 190);
     color: white;
     text-align: center;
+    max-width: 100%;
 }
 
 .section__button {
@@ -54,7 +57,7 @@
 }
 
 .section__input {
-    width: 500px;
+    max-width: 500px;
     margin-left: 96px;
     border-radius: 20px;
 }
@@ -64,7 +67,7 @@
 }
 
 .section__select {
-    width: 500px;
+    max-width: 500px;
     margin-left: 100px;
     border-radius: 20px;
 }

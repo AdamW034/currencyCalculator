@@ -2,33 +2,37 @@
 
 {
     const calculateResult = () => {
+
+        const formElement = document.querySelector(".jsForm");
         const currencyElement = document.querySelector(".jsCurrency");
         const amountElement = document.querySelector(".jsAmount");
         const resultElement = document.querySelector(".jsResult");
-        const formElement = document.querySelector(".jsForm");
 
         formElement.addEventListener("input", () => {
 
+           
             const currencyUSD = 4.3252;
             const currencyCHF = 4.6981;
             const currencyGBP = 5.3505;
             const currencyMXN = 0.2304;
             const amount = amountElement.value;
             const currency = currencyElement.value;
-            const result = resultElement.value;
         
             switch (currency) {
                 case "USD":
-                   return result = amount / currencyUSD;
+                   result = amount / currencyUSD;
+                   break;
 
                 case "CHF":
-                   return result = amount / currencyCHF;
+                    result = amount / currencyCHF;
+                    break;
 
                 case "GBP":
-                   return result = amount / currencyGBP;
-                    
+                    result = amount / currencyGBP;
+                    break;
                 case "MXN":
-                   return result = amount / currencyMXN;
+                    result = amount / currencyMXN;
+                    break;
             };
         
             resultElement.innerText = result.toFixed(2);

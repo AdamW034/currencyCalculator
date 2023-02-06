@@ -8,7 +8,7 @@ html {
 
 .body {
     max-width: 1000px;
-    margin:auto;
+    margin:0 auto;
     font-family: 'Oswald', sans-serif;
     background-image: url("../images/euro-g2cfdf1aa6_1920.png");
     background-repeat: no-repeat;
